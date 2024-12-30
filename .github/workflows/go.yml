@@ -13,6 +13,9 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    container:
+      image: "centos:7"
+
     steps:
     - uses: actions/checkout@v4
 
@@ -22,7 +25,7 @@ jobs:
         go-version: '1.23.4'
 
     - name: Build
-      run: sudo apt install -y libpcap-dev && go build
+      run: sudo yum install -y libpcap-devel && go build
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v4
