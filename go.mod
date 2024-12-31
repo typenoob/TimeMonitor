@@ -1,6 +1,6 @@
 module timemonitor
 
-go 1.23.4
+go 1.19
 
 require (
 	github.com/1lann/udp-forward v0.0.0-20191015034046-6b774a53ea39 // indirect
