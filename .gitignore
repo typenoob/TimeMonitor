@@ -1,4 +1,4 @@
 release
-gui
 foo*
-timemonitor.exe
+*.exe
+gui/*.exe
